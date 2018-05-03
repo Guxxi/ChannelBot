@@ -1,2 +1,2 @@
-git+https://github.com/fourjr/discord.py@rewrite
+discord.py-rewrite
 asyncio
