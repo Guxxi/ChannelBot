@@ -1,0 +1,19 @@
+{
+  "name": "ChannelBot.py",
+  "description": "discord ChannelBot",
+  "repository": "https://github.com/Guxxi/ChannelBot",
+  "env": {
+    "TOKEN": {
+        "description": "Discord token used to log in",
+        "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix to use.",
+      "required": true
+    },
+    "GITHUBTOKEN": {
+      "description": "Token for github api usage.",
+      "required": true
+    }
+  }
+}
