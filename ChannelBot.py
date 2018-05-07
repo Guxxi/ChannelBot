@@ -10,7 +10,9 @@ client = commands.Bot(command_prefix = "&")
 async def on_ready():
     print ("Bot Loaded...")
 
-"""Custom Voice Channels"""
+"""""""
+#Custom Voice Channels
+"""""""
 @client.event
 async def on_voice_state_update(member, before, after):
     channelID = 440255311949987849
@@ -61,4 +63,24 @@ async def undeny(ctx, member: discord.Member):
     elif client.channelowner.id =! ctx.author.id:
         await channel.send("You are not the owner of this channel!")
 """"""
+						   
+						   
+						   
+						   
+"""						   
+""""""
+#Fortnite Win Checker
+""""""
+@client.command()
+async def getwins(ctx, platform, ign):
+	if type(ign) == str:
+		if platform == "xbox":
+			console = "xbl"
+		elif platform == "ps4":
+			console = "psn"
+		elif platform == "pc":
+			console = "pc"
+		ignStats = requests.get("https://api.fortnitetracker.com/v1/profile/{" + console + "}/{" + ign + "}", developerKey="")
+
+"""
 client.run("NDM3NDgxNzkxMTE3MzI4Mzk1.DcP8TQ.6iCLEPGYYMzt8ZfQxlIBjy-pJ60")
